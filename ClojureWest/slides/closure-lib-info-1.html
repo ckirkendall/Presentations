@@ -1,0 +1,44 @@
+<html>
+<body>
+<div class="slide">
+<h2>What's in the sink?</h2>
+<div class="two-col">
+<h3 style="padding-top: 10px;">Dom & CSS</h3>
+<ul>
+<li>goog.dom.*</li>
+<li style="padding-left: 20px;">goog.dom.DomHelper</li>
+<li style="padding-left: 20px;">goog.dom.classes</li>
+<li style="padding-left: 20px;"><a href="http://closure-library.googlecode.com/svn/docs/namespace_goog_dom.html">more...</a></li>
+<li>goog.style</li>
+</ul>
+<h3 style="padding-top: 10px;">Animation</h3>
+<ul>
+<li>goog.fx.*</li>
+<li style="padding-left: 20px;">Good examples of use can be found in ClosureScriptOne and Enfocus.</li>
+<li style="padding-left: 20px;"><a href="http://closure-library.googlecode.com/svn/docs/namespace_goog_fx.html">more info</a></li>
+</ul>
+</div>
+<div id="clj-is" class="two-col">
+<h3 style="padding-top: 10px;">Events</h3>
+<ul>
+<li>goog.events</li>
+<li style="padding-left: 20px;">Closure is extremely event drive almost everything extends EventTarget.</li>
+<li style="padding-left: 20px;"><a href="http://closure-library.googlecode.com/svn/docs/namespace_goog_events.html">more info</a></li>
+</ul>
+<br/>
+<pre style="font-size: .7em;">
+
+(at js/document
+  ["#cool"] (listen 
+              :click 
+              #(at (.currentTarget %) 
+                   (fade-out 500))))
+
+</pre>
+</div>
+<div class="one-col">
+
+</div>
+
+</body>
+</html>
